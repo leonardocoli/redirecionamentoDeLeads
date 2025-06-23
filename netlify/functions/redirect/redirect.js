@@ -25,8 +25,8 @@ exports.handler = async (event, context) => {
       { upsert: true, returnDocument: 'after' }
     );
     const currentIndex = findResult ? findResult.index : 1;
-
-    let whatsappNumber1 = process.env.WHATSAPP_NUMBER_1;
+//whatsapp 1 thiago ; whatsapp 2 joice
+    let whatsappNumber1 = process.env.WHATSAPP_NUMBER_2;
     let whatsappNumber2 = process.env.WHATSAPP_NUMBER_2;
 
     if (!whatsappNumber1 || !whatsappNumber2) {
