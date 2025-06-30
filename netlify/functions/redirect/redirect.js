@@ -43,7 +43,7 @@ exports.handler = async (event, context) => {
 
     let activeWhatsappNumbers = [];
     // tirar && !isSunday 
-    if (!isSaturday && !isSunday) {
+    if (!isSaturday) {
       activeWhatsappNumbers.push(whatsappNumber1);
     }
     if (!isSunday) {
